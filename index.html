@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Survey-Form</title>
+</head>
+<body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">This is a form made as apart of certification</p>
+    
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" title="Fill the form" placeholder="Enter your name here">
+        <br>
+        <br>
+
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" placeholder="Enter your valid email id here" required/><br />
+        <br>
+        <br>
+
+        <label for="number" id="number-label">Age (15-55): </label>
+        <input type="number" id="number" min="15" max="55" placeholder="Age?">
+        <br>
+        <br>
+
+        <label for="degreeTaken">You completed undergraduation by doing?</label>
+        <br>
+        <br>
+        <select name="degree" id="dropdown">
+            <option value="ChooseFromBelow:">Choose from below:</option>
+            <option value="BTech">BTech</option>
+            <option value="BCA">BCA</option>
+            <option value="BE">BE</option>
+            <option value="BSc">BSc</option>
+            <option value="Likha nahi">Nahi likha isme</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="OneThingYouLikedAboutThisForm">One Thing You Liked About This Form: <br>
+           <input type="radio" id="Look" name="feature" value="Look">Look<br>
+           <input type="radio" id="Questions" name="feature" value="Questions">Questions<br>
+        </label>
+        <br>
+        <br>
+
+        <label for="interestQuestion">What are your interests?</label><br>
+            <input type="checkbox" name="interest1" value="cycling">
+            <label for="interest1">I love Cycling.</label><br>
+
+            <input type="checkbox" name="interest2" value="Cooking">
+            <label for="interest2">I like Cooking.</label><br>
+
+            <input type="checkbox" name="interest3" value="Gaming">
+            <label for="interest3">Gaming is on my mind.</label><br>
+        
+            <br>
+        <label for="explainInterest">Tell more about interests: </label>
+        <textarea id="InterestExplain" name="Explain" rows="6" cols="22">Enter something interesting about your interest(s): </textarea>
+
+        <br>
+        <br>
+    </form>
+    <button type="submit" id="submit" form="survey-form" value="submit">Submit</button>
+</body>
+</html>
